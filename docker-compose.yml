@@ -6,6 +6,8 @@ services:
         image: openag/rpi_brain
         expose:
             - 5000
+        ports:
+            - 5000:5000
         devices:
             - "/dev/ttyACM0:/dev/ttyACM0"
             - "/dev/video0:/dev/video0"
